@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,8 +16,102 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>Artificial intelligence</h1>
+					<div>
+						<p>by Moritz Heinzle / 27.01.2025</p>
+					</div>
+
+				</section>
+				<section>
+					<h2>Table of content</h2>
+					<ul>
+						<li>Introduction to AI</li>
+						<li>AI Models
+						<ul>
+							<li>Machine Learning</li>
+						</ul></li>
+					</ul>
+				</section>
+				<section>
+
+
+					<!-- Vertical Slides inside the main section -->
+					<section>
+
+						<h2>What is AI?</h2>
+						<ul>
+							<li><strong>Definition:</strong> Artificial intelligence (AI) is technology that enables computers and machines to simulate human learning, comprehension, problem solving, decision making, creativity and autonomy.</li>
+							<li><strong>Examples of AI:</strong></li>
+						</ul>
+						<ul>
+							<li>Virtual Assistants (Siri, Alexa, Google Assistant)</li>
+							<li>Recommendation Systems (Netflix, Amazon)</li>
+							<li>Autonomous Vehicles (Self-driving cars)</li>
+							<li>AI in Healthcare (Medical image analysis, disease prediction)</li>
+							<li>Large Language Models (GPT-4o)</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Brief History of AI</h2>
+						<ul>
+							<li><strong>1956</strong>: AI field established at the Dartmouth Conference.</li>
+							<li><strong>1960s</strong>: Early AI programs like ELIZA and SHRDLU emerge.</li>
+							<li><strong>1970s–80s</strong>: "AI Winter" slows progress; expert systems rise.</li>
+							<li><strong>1997</strong>: IBM’s Deep Blue defeats Kasparov in chess.</li>
+							<li><strong>2012</strong>: Deep learning gains prominence with AlexNet.</li>
+							<li><strong>2016</strong>: AlphaGo beats Go champion Lee Sedol.</li>
+							<li><strong>2020s</strong>: Large language models (GPT) and creative AI tools (DALL·E) thrive.</li>
+						</ul>
+
+					</section>
+
+					<section>
+						<h2>Why is AI Important Today?</h2>
+						<ul>
+							<li><strong>Ubiquity and Impact:</strong> AI is transforming industries like healthcare, automotive, finance, and entertainment.</li>
+							<li><strong>Economic Importance:</strong> AI is expected to drive massive economic growth, with the AI market forecasted to reach over $190 billion by 2025.</li>
+							<li><strong>Everyday Life:</strong> From powering virtual assistants to recommendation engines, AI is integrated into daily activities like shopping and navigation.</li>
+						</ul>
+					</section>
+
+				</section>
+				<section>
+					<h2>Machine Learning</h2>
+					<section>
+						<h3>Supervised Learning</h3>
+						<ul>
+							<li>
+								predicts output based on labeld data
+							</li>
+							<li>
+								<strong>Examples:</strong>
+								<ul>
+									<li><strong>Linear Regression: </strong>Predicts continuous values based on a linear relationship between input and output.</li>
+									<li><strong>Logistic Regression: </strong>Used for binary classification, predicting probabilities with a logistic function.</li>
+									<li><strong>Decision Trees: </strong> Are Using a tree-like graph of decisions</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Unsupervised Learning</h3>
+						<ul>
+							<li>
+								Discover hidden patterns in unlabeled data.
+							</li>
+							<li>
+								<strong>Examples:</strong>
+								<ul>
+									<li><strong>K-Meands Clustering: </strong>Partitions data into clusters based on similarity.</li>
+									<li><strong>DBSCAN: </strong>Used for binary classification, predicting probabilities with a logistic function.</li>
+									<li><strong>Decision Trees: </strong> Are Using a tree-like graph of decisions</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+				</section>
 			</div>
 		</div>
 
@@ -31,6 +125,7 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
