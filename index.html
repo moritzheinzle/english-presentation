@@ -21,12 +21,19 @@
 					<div>
 						<p>by Moritz Heinzle / 27.01.2025</p>
 					</div>
+					<aside class="notes">
+						Hello everyone! Today, we’re diving into the world of Artificial Intelligence. AI is all around us, from personal assistants like Siri, to self-driving cars, and even smart recommendations on your favorite apps. It’s a technology that’s rapidly changing how we live and work.
+
+						But what exactly is AI? Simply put, it’s the ability of machines to perform tasks that normally require human intelligence—like understanding speech, recognizing images, or making decisions. In this presentation, we’ll explore how AI works and why it’s becoming such a big part of our future.
+					</aside>
 
 				</section>
 				<section>
 					<h2>Table of content</h2>
 					<ul>
+						<li>Difference AI/ML/DL/NLP/LLM/Conv. AI</li>
 						<li>Introduction to AI</li>
+						<li>Alex Net</li>
 						<li>AI Models
 							<ul>
 								<li>Machine Learning</li>
@@ -35,6 +42,140 @@
 						</li>
 					</ul>
 				</section>
+				<section>
+					<section>
+						<aside class="notes">
+								<ul>
+									<li>Frequently used terms</li>
+								</ul>
+						</aside>
+						<h2>Difference AI / ML / DL / NLP / LLM</h2>
+					</section>
+					<section>
+						<aside class="notes">
+							<ul>
+								<li>AI is all about creating machines that can think and act like humans in certain tasks.</li>
+								<li>It focuses on automating complex tasks that would normally require human input.</li>
+								<li>Some common examples include self-driving cars, medical diagnosis tools, and even systems that can recognize images or patterns.</li>
+							</ul>
+						</aside>
+						<h3>AI (Artificial Intelligence)</h3>
+						<p><b>Definition:</b> The broader field of AI involves creating systems that can perform tasks requiring human-like intelligence, such as problem-solving, decision-making, and learning.</p>
+						<p><b>Focus:</b> Emulating human intelligence through various techniques and methods, including rule-based systems, machine learning, and deep learning.</p>
+						<p><b>Examples:</b></p>
+						<ul>
+							<li>Robotics</li>
+							<li>Expert systems (e.g., medical diagnosis tools)</li>
+							<li>Image recognition systems</li>
+							<li>Autonomous vehicles</li>
+						</ul>
+					</section>
+
+					<section>
+						<aside class="notes">
+							<ul>
+								<li>Machine learning is a branch of AI where systems improve on their own by analyzing data.</li>
+								<li>The more data they have, the better they can make predictions or classifications.</li>
+								<li>It’s widely used in industries like banking, e-commerce, and online marketing, helping with things like fraud detection or recommending products to users.</li>
+							</ul>
+						</aside>
+						<h3>ML (Machine Learning)</h3>
+						<p><b>Definition:</b> A subset of AI that focuses on developing algorithms that allow systems to learn from data and improve over time without explicit programming.</p>
+						<p><b>Focus:</b> Creating models that learn from data to make predictions, classifications, and decisions based on patterns in the data.</p>
+						<p><b>Examples:</b></p>
+						<ul>
+							<li>Fraud detection in banking</li>
+							<li>Recommendation systems (e.g., Netflix, Amazon)</li>
+							<li>Stock market prediction</li>
+							<li>Spam email detection</li>
+						</ul>
+					</section>
+
+					<section>
+						<aside class="notes">
+							<ul>
+								<li>Deep learning takes machine learning a step further by using complex neural networks.</li>
+								<li>These networks have many layers, which allow them to recognize complex patterns in data, such as faces in photos or speech in audio.</li>
+								<li>It’s especially useful in fields like autonomous driving or voice assistants, but requires a lot of data and computing power to work effectively.</li>
+							</ul>
+						</aside>
+						<h3>DL (Deep Learning)</h3>
+						<p><b>Definition:</b> A specialized subset of machine learning that uses deep neural networks with many layers to process complex data and solve intricate problems like image and speech recognition.</p>
+						<p><b>Focus:</b> Solving complex problems through neural networks that automatically learn from large amounts of unstructured data such as images, speech, and text.</p>
+						<p><b>Examples:</b></p>
+						<ul>
+							<li>Image and facial recognition</li>
+							<li>Autonomous driving systems</li>
+							<li>Speech-to-text conversion</li>
+							<li>Generative models (e.g., DeepFake)</li>
+						</ul>
+					</section>
+
+
+
+					<section>
+						<aside class="notes">
+							<ul>
+								<li>NLP is about teaching computers to understand and interact with human language.</li>
+								<li>It enables tasks like text translation, speech recognition, and sentiment analysis.</li>
+								<li>Used in applications like chatbots, voice assistants, and language translation tools.</li>
+							</ul>
+						</aside>
+						<h3>NLP (Natural Language Processing)</h3>
+						<p><b>Definition:</b> The field of AI focused on the interaction between computers and human language, including tasks like understanding and generating text.</p>
+						<p><b>Focus:</b> Processing and analyzing human language to enable machines to understand, interpret, and respond to it.</p>
+						<p><b>Examples:</b></p>
+						<ul>
+							<li>Text translation</li>
+							<li>Sentiment analysis</li>
+							<li>Speech recognition</li>
+							<li>Keyword extraction</li>
+						</ul>
+						<audio data-autoplay src="audio/nlp-audio.mp3"></audio>
+					</section>
+					<section>
+						<aside class="notes">
+							<ul>
+								<li>LLMs are advanced NLP models that can generate and understand text at a very large scale.</li>
+								<li>They can generate contextually relevant text, summarize content, or even write essays.</li>
+								<li>Examples include GPT-3 and GPT-4, which can perform tasks like text generation, translation, and even code creation.</li>
+							</ul>
+						</aside>
+						<h3>LLM (Large Language Models)</h3>
+						<p><b>Definition:</b> A subfield of NLP focused on deep learning models trained on massive amounts of text data to generate and understand natural language at scale.</p>
+						<p><b>Focus:</b> Generating coherent and contextually relevant text based on large-scale data, providing human-like language understanding.</p>
+						<p><b>Examples:</b></p>
+						<ul>
+							<li>GPT models (e.g., GPT-3, GPT-4)</li>
+							<li>Text summarization</li>
+							<li>Text generation and completion</li>
+							<li>Code generation</li>
+						</ul>
+					</section>
+					<section>
+						<aside class="notes">
+							<ul>
+								<li>Conversational AI focuses on creating systems that can hold natural, human-like conversations with users.</li>
+								<li>These systems can interact through text or voice and are used for customer support, virtual assistants, and more.</li>
+								<li>Examples include chatbots, voice assistants like Alexa or Siri, and interactive FAQ systems.</li>
+							</ul>
+						</aside>
+						<h3>Conversational AI</h3>
+						<p><b>Definition:</b> AI systems designed to simulate human-like conversations and provide interactive communication with users through text or speech.</p>
+						<p><b>Focus:</b> Creating intelligent systems capable of holding natural, context-aware conversations with users in real-time.</p>
+						<p><b>Examples:</b></p>
+						<ul>
+							<li>Chatbots (e.g., customer service bots)</li>
+							<li>Virtual assistants (e.g., Siri, Alexa)</li>
+							<li>Interactive FAQ systems</li>
+							<li>Voice-based customer support systems</li>
+						</ul>
+					</section>
+					<section>
+						<img data-src="img/diff-ai-ml-dl.png">
+					</section>
+				</section>
+
 				<section>
 
 
@@ -80,8 +221,37 @@
 
 				</section>
 				<section>
+					<section>
+						<h3>AlexNet Summary</h3>
+						<ul>
+							<li>AlexNet is a deep learning model that revolutionized computer vision.</li>
+							<li>It won the 2012 ImageNet competition with a much lower error rate than previous models.</li>
+							<li>It has 8 layers, including 5 convolutional layers, and uses ReLU activation functions to speed up training.</li>
+							<li>Introduced dropout to prevent overfitting and used data augmentation for better performance.</li>
+							<li>Its success popularized deep learning for image recognition tasks.</li>
+						</ul>
+					</section>
+					<section>
+						<img data-src="img/alex-net.jpg">
+					</section>
+				</section>
+				<section>
 
 					<section>
+						<aside class="notes">
+							<ul>
+								<li><strong>Definition:</strong> Supervised learning predicts outputs based on labeled input data.</li>
+								<li><strong>How It Works:</strong> The model is trained with input-output pairs to learn the relationship between them.</li>
+								<li><strong>Examples:</strong>
+									<ul>
+										<li><strong>Linear Regression:</strong> Predicts continuous values.</li>
+										<li><strong>Logistic Regression:</strong> Classifies data into binary categories.</li>
+										<li><strong>Decision Trees:</strong> Uses a tree-like structure to make decisions.</li>
+									</ul>
+								</li>
+							</ul>
+						</aside>
+
 						<h2>Machine Learning</h2>
 						<h3>Supervised Learning</h3>
 						<ul>
@@ -100,10 +270,26 @@
 					</section>
 					<section>
 						<h3>Linear Regression</h3>
-						<img data-src="img/linear-regression.png" alt="linear regression" style="width: 100%; height: 100%; object-fit: contain; object-position: bottom; ">
-
+						<video
+							data-autoplay
+							src="video/linear-regresion.mp4" >
+						</video>
 					</section>
 					<section>
+						<aside class="notes">
+							<ul>
+								<li><strong>Definition:</strong> Unsupervised learning identifies patterns or structures in data without labeled outcomes.</li>
+								<li><strong>How It Works:</strong> It groups or reduces data dimensions to reveal hidden insights or similarities.</li>
+								<li><strong>Examples:</strong>
+									<ul>
+										<li><strong>K-Means:</strong> Groups similar data points.</li>
+										<li><strong>DBSCAN:</strong> Detects clusters and outliers.</li>
+										<li><strong>t-SNE:</strong> Visualizes high-dimensional data.</li>
+									</ul>
+								</li>
+							</ul>
+						</aside>
+
 						<h3>Unsupervised Learning</h3>
 						<ul>
 							<li>
@@ -119,19 +305,92 @@
 							</li>
 						</ul>
 					</section>
+					<section>
+						<h3>Reinforcement Learning</h3>
+						<aside class="notes">
+							<ul>
+								<li><strong>Definition:</strong> Reinforcement learning learns by interacting with an environment to maximize rewards.</li>
+								<li><strong>How It Works:</strong> The agent takes actions, receives feedback, and improves its strategy over time.</li>
+								<li><strong>Examples:</strong>
+									<ul>
+										<li><strong>Q-Learning:</strong> Learns optimal actions without a model of the environment.</li>
+										<li><strong>Deep Q-Networks (DQN):</strong> Combines Q-learning with deep learning for complex environments.</li>
+										<li><strong>AlphaGo:</strong> Used reinforcement learning to master the game of Go.</li>
+									</ul>
+								</li>
+							</ul>
+						</aside>
+
+						<ul>
+							<li>
+								Learns through interaction with an environment, maximizing cumulative rewards over time.
+							</li>
+							<li>
+								<strong>Examples:</strong>
+								<ul>
+									<li><strong>Q-Learning: </strong>A model-free algorithm that learns the value of actions in a given state, aiming to maximize long-term rewards.</li>
+									<li><strong>Deep Q-Networks (DQN): </strong>Combines Q-learning with deep learning to handle high-dimensional state spaces, such as in video games.</li>
+									<li><strong>Policy Gradient Methods: </strong>Directly optimizes the policy by adjusting the parameters to maximize expected reward.</li>
+									<li><strong>AlphaGo: </strong>Used reinforcement learning to play the game Go, achieving superhuman performance.</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<img src = "img/machine-learning.png">
+					</section>
+
 				</section>
+
 				<section>
-				<section>
-					<h2>Deep Learning</h2>
-					<p>
-						Deep learning is an advanced type of ML that learns to identify complex patterns in text, images, and sounds.
+					<section>
+						<h2>Deep Learning</h2>
 
-						With deep learning, data is processed and classified through layers, and each layer has a role to play in the processing of input data.
+						<ul>
+							<li>
+								<strong>Definition:</strong>
+								<ul>
+									<li>A subset of machine learning using artificial neural networks.</li>
+									<li>Models learn from large datasets through multiple layers of interconnected nodes.</li>
+								</ul>
+							</li>
 
-						Here’s a quick look at the different types of layers in a deep learning neural network:
-					</p>
+							<li>
+								<strong>What It Is:</strong>
+								<ul>
+									<li>Mimics the human brain's process to analyze data and make decisions.</li>
+									<li>Uses layers to automatically learn patterns in raw data (e.g., images, text).</li>
+								</ul>
+							</li>
 
-				</section>
+							<li>
+								<strong>Examples:</strong>
+								<ul>
+									<li>Image classification (e.g., identifying objects in images).</li>
+									<li>Speech recognition (e.g., Siri, Alexa).</li>
+									<li>Autonomous vehicles (e.g., self-driving cars).</li>
+									<li>Natural language processing (e.g., translation, sentiment analysis).</li>
+								</ul>
+							</li>
+						</ul>
+						<aside class="notes">
+							<ul>
+								<li><strong>Definition:</strong> Deep learning is a subset of machine learning that uses neural networks to process large data sets and solve complex problems.</li>
+								<li><strong>How It Works:</strong> It uses multiple layers to detect patterns and features in data, learning progressively from raw information.</li>
+								<li><strong>Why It’s Important:</strong> It has improved accuracy in tasks like image recognition, speech processing, and natural language understanding.</li>
+								<li><strong>Examples:</strong>
+									<ul>
+										<li><strong>Image Classification:</strong> Identifies objects in images (e.g., facial recognition).</li>
+										<li><strong>Speech Recognition:</strong> Powers virtual assistants like Siri and Alexa.</li>
+										<li><strong>Autonomous Vehicles:</strong> Helps self-driving cars understand their environment.</li>
+										<li><strong>NLP:</strong> Enables translation and sentiment analysis.</li>
+									</ul>
+								</li>
+							</ul>
+						</aside>
+
+					</section>
+
 				<section>
 					<img data-src="img/neuronal-network.png" alt="neuronal network" style="width: 100%; height: 100%; object-fit: contain; object-position: center; ">
 					<ul>
@@ -140,15 +399,295 @@
 						<li><strong>outer layer: </strong> uses the processed data to deliver a result.</li>
 					</ul>
 				</section>
+					<section>
+						<aside class="notes">
+							<ul>
+								<li>CNNs are primarily used for tasks related to image recognition and processing.</li>
+								<li>They automatically learn spatial hierarchies of features from input data.</li>
+								<li>Used in applications like image classification, object detection, and facial recognition.</li>
+							</ul>
+						</aside>
+
+						<h3>CNN (Convolutional Neural Networks)</h3>
+
+						<p><b>Definition:</b> A deep learning model primarily used for processing grid-like data, such as images, using convolutional layers.</p>
+
+						<p><b>Focus:</b> Learning spatial hierarchies of features in image data by applying convolution operations.</p>
+
+						<p><b>Examples:</b></p>
+						<ul>
+							<li>Image classification</li>
+							<li>Object detection</li>
+							<li>Facial recognition</li>
+							<li>Image segmentation</li>
+						</ul>
+
+
+					</section>
+
+					<section>
+						<aside class="notes">
+							<ul>
+								<li>RNNs are designed for sequential data and are used in applications where order matters.</li>
+								<li>They have loops that allow information to persist, helping the model remember previous inputs.</li>
+								<li>Used in tasks like speech recognition, language modeling, and time series prediction.</li>
+							</ul>
+						</aside>
+
+						<h3>RNN (Recurrent Neural Networks)</h3>
+
+						<p><b>Definition:</b> A type of neural network designed for sequential data, where the output depends not only on the current input but also on previous ones.</p>
+
+						<p><b>Focus:</b> Processing sequential data by maintaining hidden states that carry information from previous time steps.</p>
+
+						<p><b>Examples:</b></p>
+						<ul>
+							<li>Speech recognition</li>
+							<li>Language modeling</li>
+							<li>Time series prediction</li>
+							<li>Stock price forecasting</li>
+						</ul>
+
+
+					</section>
+
+					<section>
+						<aside class="notes">
+							<ul>
+								<li>LSTMs solve the problem of long-term dependencies in traditional RNNs.</li>
+								<li>They use memory cells and gates to preserve important information over time.</li>
+								<li>Commonly used in language translation, speech recognition, and time series analysis.</li>
+							</ul>
+						</aside>
+
+						<h3>LSTM (Long Short-Term Memory)</h3>
+
+						<p><b>Definition:</b> A specialized type of RNN designed to better capture long-term dependencies by using memory cells and gates.</p>
+
+						<p><b>Focus:</b> Overcoming the limitations of traditional RNNs in learning long-term patterns by using memory cells that preserve information over longer time periods.</p>
+
+						<p><b>Examples:</b></p>
+						<ul>
+							<li>Machine translation</li>
+							<li>Speech recognition</li>
+							<li>Text generation</li>
+							<li>Predictive text input</li>
+						</ul>
+
+
+					</section>
+
+					<section>
+						<aside class="notes">
+							<ul>
+								<li>GANs consist of two neural networks that train against each other, the generator and the discriminator.</li>
+								<li>The generator creates fake data, and the discriminator tries to detect whether the data is real or fake.</li>
+								<li>Common applications include image generation, deepfakes, and super-resolution.</li>
+							</ul>
+						</aside>
+
+						<h3>GAN (Generative Adversarial Networks)</h3>
+
+						<p><b>Definition:</b> A deep learning model consisting of two networks (generator and discriminator) that train together through adversarial competition to generate new data.</p>
+
+						<p><b>Focus:</b> Generating realistic data by training two neural networks in opposition, with the generator trying to create data and the discriminator attempting to identify whether the data is real or fake.</p>
+
+						<p><b>Examples:</b></p>
+						<ul>
+							<li>Image generation</li>
+							<li>Deepfakes</li>
+							<li>Super-resolution (enhancing image quality)</li>
+							<li>Style transfer</li>
+						</ul>
+
+
+					</section>
+				</section>
 				<section>
-					<h3>Examples:</h3>
+				<section>
+					<h2>Technical Background of GPT</h2>
+					<p>Understanding the architecture and training behind GPT models (like GPT-3 and GPT-4).</p>
+				</section>
+
+				<!-- Slide 2: GPT Architecture (Transformer-Based) -->
+				<section>
+					<h2>GPT Architecture</h2>
 					<ul>
-						<li><strong>Convolutional Neural Networks (CNNs): </strong>re for processing grid-like data such as images. CNNs are powerful for tasks like image classification, object detection, and even playing games.</li>
-						<li><strong>Recurrent Neural Networks (RNNs): </strong> re suited for sequential data like time series or natural language. RNNs are for applications like language modeling and machine translation.</li>
-						<li><strong>Long Short-Term Memory Networks (LSTMs): </strong>are a special kind of RNN capable of learning long-term dependencies. This makes them effective for tasks involving sequential data that spans over long sequences.</li>
+						<li><strong>Transformer Architecture:</strong> GPT is based on the Transformer model, which uses self-attention layers to process input text in parallel rather than sequentially.</li>
+						<li><strong>Decoder-Only Model:</strong> GPT uses only the decoder part of the Transformer architecture (unlike BERT, which uses both the encoder and decoder). This makes it particularly suited for text generation tasks.</li>
+						<li><strong>Self-Attention Mechanism:</strong> In each layer, GPT uses self-attention to learn the relationships between all words in a sequence, regardless of their position in the text.</li>
+						<li><strong>Positional Encoding:</strong> Since GPT processes text in parallel (and not sequentially), it incorporates positional encodings to maintain word order information.</li>
+					</ul>
+				</section>
+
+				<!-- Slide 3: Training and Fine-Tuning -->
+				<section>
+					<h2>Training and Fine-Tuning</h2>
+					<ul>
+						<li><strong>Pretraining:</strong> GPT models are pretrained on large corpora of text data using the objective of predicting the next word in a sequence (causal language modeling).</li>
+						<li><strong>Unsupervised Learning:</strong> GPT learns patterns, context, and language structure by predicting the next token using unsupervised learning methods.</li>
+						<li><strong>Fine-Tuning:</strong> After pretraining, GPT can be fine-tuned on domain-specific tasks (e.g., question answering, summarization) using supervised learning on labeled datasets.</li>
+						<li><strong>Zero-shot and Few-shot Learning:</strong> GPT-3 is particularly strong in zero-shot and few-shot learning. It can perform tasks without explicit retraining by interpreting examples provided in the prompt.</li>
+					</ul>
+				</section>
+					<section>
+						<img src ="img/gpt.png">
+					</section>
+				</section>
+				<section>
+				<section>
+					<h2>The Future of AI</h2>
+					<ul>
+						<li><strong>Advanced Automation:</strong>
+							<p>AI will revolutionize industries by taking on more complex and high-level tasks, from autonomous vehicles to intelligent manufacturing systems. This will create a more efficient economy, but also open new challenges in workforce adaptation and job roles.</p>
+						</li>
+						<li><strong>Smarter Personal Assistants:</strong>
+							<p>Virtual assistants will evolve to become even more intuitive, understanding not just commands but context, emotions, and intent. These assistants will handle complex scheduling, problem-solving, and predictive tasks to anticipate your needs before you even ask.</p>
+						</li>
+
+
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li><strong>AI in Creativity:</strong>
+							<p>AI will push the boundaries of creativity, contributing to music, art, film, and literature in new and exciting ways. By collaborating with humans, AI will help artists break creative barriers, generating original concepts, compositions, and designs.</p>
+						</li>
+						<li><strong>AI in Healthcare:</strong>
+							<p>AI will become central to healthcare, providing faster, more accurate diagnostics and personalizing treatment plans based on a patient’s unique genetic and medical profile. In the future, AI-driven health systems could predict diseases before they manifest.</p>
+						</li>
+						<li><strong>AI and Human Collaboration:</strong>
+							<p>Rather than replacing humans, AI will complement human capabilities, enhancing decision-making and problem-solving. In fields like law, research, and engineering.</p>
+						</li>
 					</ul>
 				</section>
 				</section>
+				<section>
+					<section>
+						<h2>Ethics of AI</h2>
+						<ul>
+							<li><strong>Bias and Fairness:</strong>
+								<p>AI systems are trained on data, and if the data is biased, the AI can unintentionally make biased decisions. It's crucial to develop fair AI that treats everyone equally, irrespective of race, gender, or background.</p>
+							</li>
+							<li><strong>Privacy and Security:</strong>
+								<p>As AI becomes more integrated into our lives, safeguarding personal data becomes even more critical. AI systems must be designed with privacy in mind to protect sensitive information and ensure security in an increasingly digital world.</p>
+							</li>
+
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li><strong>Transparency and Accountability:</strong>
+								<p>AI systems often operate as "black boxes," making decisions without clear explanations. Ensuring transparency in AI decision-making processes and holding AI developers accountable for their systems is essential for trust and societal acceptance.</p>
+							</li>
+							<li><strong>Job Displacement:</strong>
+								<p>As AI automates more tasks, there’s concern about job displacement. It's vital to explore how AI can complement human workers rather than replace them, and invest in reskilling workers for new opportunities in an AI-driven world.</p>
+							</li>
+							<li><strong>AI for Good:</strong>
+								<p>AI has the potential to be a powerful tool for social good, but we need to ensure it's developed responsibly and for the benefit of all.</p>
+							</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+				<section>
+					<h2>AI Hardware & Data Centers</h2>
+					<ul>
+						<li><strong>Advanced Hardware:</strong>
+							<p>AI requires specialized hardware to handle the massive computations involved. GPUs (Graphics Processing Units) are particularly important due to their parallel processing capabilities, enabling fast training of deep learning models. Additionally, TPUs (Tensor Processing Units) are designed specifically for AI tasks, accelerating machine learning workloads.</p>
+						</li>
+						<li><strong>Data Centers:</strong>
+							<p>AI applications rely on powerful data centers equipped with high-performance servers. These data centers house the computational resources necessary for running AI models, storing vast amounts of data, and supporting real-time processing for applications like autonomous vehicles and cloud-based AI services.</p>
+						</li>
+
+					</ul>
+				</section>
+					<section>
+						<video src="video/cpu-gpu.mp4" data-autoplay></video>
+					</section>
+					<section>
+						<ul>
+							<li><strong>Edge Computing:</strong>
+								<p>To reduce latency and improve efficiency, edge computing brings AI processing closer to the source of data. Devices such as IoT sensors or smart cameras process data locally, offloading less critical tasks to cloud-based data centers, ensuring faster response times for time-sensitive AI applications.</p>
+							</li>
+							<li><strong>Sustainability Challenges:</strong>
+								<p>AI workloads are energy-intensive, putting a strain on data centers' power consumption. As AI adoption grows, it's essential to focus on green computing practices, including using renewable energy sources and improving energy efficiency to reduce the environmental impact of AI infrastructure.</p>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<img src="img/datacenter.png">
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Real-Life Use Case for AI</h2>
+						<h3>Healthcare</h3>
+						<img src="img/hc-usecase.jpg" alt="Healthcare AI" style="width: 60%; height: auto;">
+						<p>AI-driven diagnostic tools and personalized treatment plans are transforming healthcare, improving patient outcomes and speeding up diagnosis.</p>
+					</section>
+
+					<section>
+
+						<h3>Finance</h3>
+						<img src="img/fn-usecase.png" alt="Finance AI" style="width: 60%; height: auto;">
+						<p>AI in finance helps with fraud detection, algorithmic trading, and risk analysis, enabling smarter decisions and more efficient operations.</p>
+					</section>
+
+					<section>
+						<h3>Autonomous Vehicles</h3>
+						<img src="img/waymo-usecase.jpg" alt="Autonomous Vehicles AI" style="width: 60%; height: auto;">
+						<p>AI powers self-driving cars, enabling them to navigate safely, make real-time decisions, and improve road safety.</p>
+					</section>
+
+					<section>
+						<h3>Customer Service</h3>
+						<img src="img/ct-usecase.png" alt="Customer Service AI" style="width: 60%; height: auto;">
+						<p>AI-driven chatbots and virtual assistants provide efficient, personalized customer service, improving user experience and reducing response times.</p>
+					</section>
+
+					<section>
+						<h3>Retail</h3>
+						<img src="img/rt-usecase.jpg" alt="Retail AI" style="width: 60%; height: auto;">
+						<p>AI enhances the retail experience through personalized recommendations, inventory management, and customer insights, boosting sales and customer loyalty.</p>
+					</section>
+
+					<section>
+						<h3>Manufacturing</h3>
+						<img src="img/mf-usecase.png" alt="Manufacturing AI" style="width: 60%; height: auto;">
+						<p>In manufacturing, AI predicts maintenance needs, optimizes production, and ensures quality control, reducing costs and increasing efficiency.</p>
+					</section>
+
+					<section>
+						<h3>Entertainment</h3>
+						<img src="img/nf-usecase.png" alt="Entertainment AI" style="width: 60%; height: auto;">
+						<p>AI is transforming entertainment with personalized content recommendations, AI-assisted game development, and creative tools for music and video production.</p>
+					</section>
+
+				</section>
+				<section>
+				<section>
+					<h2>Evolution of AI Research</h2>
+					<p>The field of AI research has evolved over several decades. It began in the 1950s, with researchers aiming to mimic human reasoning in machines. Early AI research was inspired by symbolic approaches, logic, and rule-based systems. Over time, research has shifted to statistical approaches and machine learning techniques, leading to the creation of more adaptable, flexible, and scalable systems. Today, AI research is multidisciplinary, bringing together computer scientists, ethicists, linguists, and others to advance the field.</p>
+				</section>
+
+				<!-- Interdisciplinary Nature of AI Research -->
+				<section>
+					<h2>Interdisciplinary Nature of AI Research</h2>
+					<p>AI research is inherently interdisciplinary, drawing from a wide range of academic fields. Key areas of influence include:
+					<ul>
+						<li><strong>Computer Science:</strong> The foundation for designing algorithms, architectures, and computational models.</li>
+						<li><strong>Neuroscience:</strong> Insights from the structure and functioning of the brain inform AI models, particularly in areas like neural networks.</li>
+						<li><strong>Psychology:</strong> Human cognition and behavior studies help inform AI systems that aim to simulate human-like learning and decision-making processes.</li>
+						<li><strong>Mathematics:</strong> A crucial discipline for formulating the models, optimization methods, and statistical analysis used in AI research.</li>
+					</ul>
+					<
+				</section>
+				</section>
+
+
+
 			</div>
 		</div>
 
